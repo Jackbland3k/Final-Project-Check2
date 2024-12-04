@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block content %}
+
+<div class= "container-fluid mt-5">
+    <div class= "row mb-4"> 
+        <div class = "col-md-6">
+            <input type= "text" id="search-bar" class="form-control" placeholder="Search for products..." oninput="searchProducts()">
+        </div>
+        <div class= "col-md-3">
+            <select id ="category-filter" class="form-control" onchange= "filterProducts()">
+                <option value= "">All Categories</option>
+                <option value= "Frosted Cookies">Frosted Cookies</option>
+                <option vlaue= "Unfrosted Cookies">Unfrosted Cookies</option>
+            </select>
+        </div>
+        <div class= "col-md-3">
+            <select id="price-filter" class="form-control" onchange= "filterProducts()">
+                <option value="">Sort by</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="price-asc">Price: Low to High</option>
+            </select>
+        </div>
+    </div>
+
+
+
+
+
+    <h1 class= "text-center mb-4"> Our Products </h1>
+    <div id= "product-grid" class="row">
+
+    </div>
+</div>
+{% endblock %}

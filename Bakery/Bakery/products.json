@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "name": "Pup Cookies",
+        "description": "2 Dozen Vanialla Frosted Cookies.",
+        "price": 5.00,
+        "category": "Frosted Cookies",
+        "image": "/static/images/pup_cookie.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Birthday Cookies",
+        "description": "2 Dozen Vanialla Frosted Cookies.",
+        "price": 5.00,
+        "category": "Frosted Cookies",
+        "image": "/static/images/birthday_cookie.jpg"
+    },
+    {
+        "id": 3,
+        "name": "4th of July Cookies",
+        "description": "2 Dozen Vanialla Frosted Cookies.",
+        "price": 5.00,
+        "category": "Frosted Cookies",
+        "image": "/static/images/fj_cookie.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Choco cookies",
+        "description": "2 Dozen Choclate Chip Cookies.",
+        "price": 5.00,
+        "category": "Unfrosted Cookies",
+        "image": "/static/images/cookie.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Scarlet Bites",
+        "description": "2 Dozen Red Velvet Cookies.",
+        "price": 5.00,
+        "category": "Unfrosted Cookies",
+        "image": "/static/images/red_velvet_cookie.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Snickerdoodle",
+        "description": "2 Dozen Snickerdoodle Cookies.",
+        "price": 5.00,
+        "category": "Unfrosted Cookies",
+        "image": "/static/images/snickerdoodle_cookie.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Custom Frosted Cookies",
+        "description": "2 Dozen Custom Cookies.",
+        "price": 5.00,
+        "category": "Frosted Cookies",
+        "image": "/static/images/custom_frosted_cookie.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Custom Unfrosted Cookies",
+        "description": "2 Dozen Custom Cookies.",
+        "price": 5.00,
+        "category": "Unfrosted Cookies",
+        "image": "/static/images/custom_unfrosted_cookie.jpg"
+    }
+
+
+
+]

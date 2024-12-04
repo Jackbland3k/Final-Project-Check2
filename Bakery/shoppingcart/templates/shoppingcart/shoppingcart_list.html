@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title%}
+    Shopping Cart
+{% endblock %}
+
+{% block content %}
+<section>
+    <h1>Your Shopping Cart</h1>
+
+    <!-- Display Products -->
+    <div id="cart-items">
+        {% for product in products %}
+        <div class="cart-item">
+            <img src="{{ product.image }}" alt="{{ product.name }}" class="cart-item-image" />
+            <div class="cart-item-details">
+                <h5>{{ product.name }}</h5>
+                <p>Price: ${{ product.price }}</p>
+                <p>Quantity: {{ product.quantity }}</p>
+                <p>Total: ${{ product.total }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Total Price Section -->
+    <div id="total-price-container">
+        <h3>Total Price: ${{ total_price }}</h3>
+    </div>
+
+    <!-- Checkout Button -->
+    <button class="btn btn-success">Proceed to Checkout</button>
+</section>
+{% endblock %}

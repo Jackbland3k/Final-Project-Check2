@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    User Login
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">User Login</h1>
+    <form method="post" onsubmit="return validateLoginForm()">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="id_username" class="form-label">Username</label>
+            <input type="text" id="id_username" name="username" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="id_password" class="form-label">Password</label>
+            <input type="password" id="id_password" name="password" class="form-control" required>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='{% url 'users:register' %}'">New User</button>
+        </div>
+
+    </form>
+
+</div>
+
+{% endblock %}
+

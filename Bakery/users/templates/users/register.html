@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    New User Registration
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">New User Registration</h1>
+    <form method="post" onsubmit="return validateRegistrationForm()">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="id_username" class="form-label">Usernames</label>
+            <input type="text" id="id_username" name="username" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="id_password1" class="form-label">New Password</label>
+            <input type="password" id="id_password1" name="password1" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="id_password2" class="form-label">Repeat Password</label>
+            <input type="password" id="id_password2" name="password2" class="form-control" required>
+        </div>
+
+        <div class="col-sm-6 d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='{% url 'users:login' %}'">Cancel</button>
+        </div>
+
+    </form>
+
+</div>
+
+{% endblock %}
+
+
